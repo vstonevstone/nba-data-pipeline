@@ -21,6 +21,11 @@ def main():
 
     args = parser.parse_args()
 
+    # Automatically create the database parent folder if it doesn't exist
+    db_dir = os.path.dirname(args.db)
+    if db_dir:
+        os.makedirs(db_dir, exist_ok=True)
+
     # Initialize Directories and DB
     db_exists = os.path.exists(args.db)
     if args.force_reset or not db_exists:
