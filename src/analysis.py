@@ -82,7 +82,7 @@ def run_analytical_queries(db_path: str):
     plt.figure(figsize=(10, 6))
     plt.plot(q3_df["season"], q3_df["avg_combined_score"], marker='o', color='#1d428a', linewidth=2.5,
              label="Total Game Score")
-    plt.plot(q3_df["season"], q3_df["avg_home_score"], linestyle='--', color='#g96127', label="Home Team Score")
+    plt.plot(q3_df["season"], q3_df["avg_home_score"], linestyle='--', color='#e86127', label="Home Team Score")
 
     plt.title("NBA League Scoring Volatility (2004 - Present)", fontsize=14, fontweight='bold')
     plt.xlabel("Season", fontsize=12)
