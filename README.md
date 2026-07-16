@@ -4,7 +4,7 @@ This route runs the pipeline in an isolated container, eliminating the need to m
 
 ### Prerequisite: Prepare Docker
 1.  **Install:** If not already installed, download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/) for your OS.
-2.  **Start:** Open the Docker Desktop application and ensure the engine status icon in the bottom-left corner is **green** (Engine Running).
+2.  **Important - Start Docker:** Open the Docker Desktop application and ensure the engine status icon in the bottom-left corner is **green** (Engine Running).
 3.  **Verify:** In your terminal, run `docker --version` to confirm your system recognizes the command.
 
 ### Step-by-Step Execution
@@ -13,6 +13,7 @@ From your terminal, execute the following commands in order:
 ```bash
 # 1. Clone the project repository to your local machine
 git clone [https://github.com/vstonevstone/nba-data-pipeline.git](https://github.com/vstonevstone/nba-data-pipeline.git)
+
 cd nba-data-pipeline
 
 # 2. Build the lightweight container image
