@@ -12,7 +12,7 @@ From your terminal, execute the following commands in order:
 
 ```bash
 # 1. Clone the project repository to your local machine
-git clone [https://github.com/vstonevstone/nba-data-pipeline.git](https://github.com/vstonevstone/nba-data-pipeline.git)
+git clone https://github.com/vstonevstone/nba-data-pipeline.git
 
 cd nba-data-pipeline
 
