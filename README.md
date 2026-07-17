@@ -1,4 +1,4 @@
-## 🐳 Option 1: Running with Docker (Recommended)
+## 🐳 Running with Docker
 
 This route runs the pipeline in an isolated container, eliminating the need to manually install Python or local package dependencies on your host machine.
 
@@ -31,31 +31,6 @@ docker run --entrypoint pytest nba-pipeline -v
 
 # 6. Clean up the stopped container instance
 docker rm nba-runner
-```
-## Option 2: Running Locally
-### Prerequisite: Python 3.10 or higher installed on your system.
-### Step-by-Step Execution
-```bash
-# 1. Clone the project repository to your local machine
-git clone [https://github.com/vstonevstone/nba-data-pipeline.git](https://github.com/vstonevstone/nba-data-pipeline.git)
-cd nba-data-pipeline
-
-# 2. Initialize and activate an isolated virtual environment
-python -m venv .venv
-
-# On macOS/Linux:
-source .venv/bin/activate
-# On Windows (PowerShell):
-.venv\Scripts\Activate.ps1
-
-# 3. Install locked package dependencies
-pip install -r requirements.txt
-
-# 4. Run the pipeline orchestrator
-python main.py
-
-# 4. Run the local test suite
-pytest -v
 ```
 ### How to Verify and Inspect Results
 Once the pipeline completes its run, you can inspect the outputs across three layers:
